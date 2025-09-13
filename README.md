@@ -21,14 +21,6 @@ The analysis compares **Morning (6–11 AM)** vs **Evening (4–8 PM)** riders t
 
 ---
 
-## Key Analyses
-
-Perfect 👍 Since we just updated the query to **bucket subscriber types into Casual, Subscriber, and Unknown**, let’s also update the **Analysis** section of your `README.md` so it reflects this change.
-
-Here’s a clean, reordered version of the **Key Analysis** section with the new **Morning vs Evening Rider Type Distribution** included:
-
----
-
 ## Key Analysis
 
 1. **Morning vs Evening Trip Patterns (`morning_vs_evening_summary.sql`)**
@@ -74,6 +66,15 @@ Here’s a clean, reordered version of the **Key Analysis** section with the new
 
    * Tracked ride volumes across weeks.
    * Shows **seasonal fluctuations and long-term trends**.
+
+---
+
+## Dashboard Overview
+
+The following dashboard consolidates all analyses in one Google Sheets dashboard:
+<img width="833" height="585" alt="Austin Bikeshare Dashboard" src="https://github.com/user-attachments/assets/93ac59c8-7139-46c8-981d-291f5f897c55" />
+
+
 
 ---
 
