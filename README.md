@@ -23,27 +23,57 @@ The analysis compares **Morning (6–11 AM)** vs **Evening (4–8 PM)** riders t
 
 ## Key Analyses
 
-1. **top_start_stations.sql**  
-   - Finds the most frequently used **starting stations** in the dataset.  
+Perfect 👍 Since we just updated the query to **bucket subscriber types into Casual, Subscriber, and Unknown**, let’s also update the **Analysis** section of your `README.md` so it reflects this change.
 
-2. **top_end_stations.sql**  
-   - Finds the most frequently used **ending stations** in the dataset.  
+Here’s a clean, reordered version of the **Key Analysis** section with the new **Morning vs Evening Rider Type Distribution** included:
 
-3. **morning_vs_evening_summary.sql**  
-   - Summarizes **total trips** during morning (6–11 AM) vs evening (4–8 PM).  
+---
 
-4. **percentage_differences.sql**  
-   - Calculates **percentage differences** in trip counts and **average duration** between morning and evening riders.  
+## Key Analysis
 
-5. **weekly_trip_trends.sql**  
-   - Tracks **weekly trip volumes** to identify long-term usage patterns across both groups.  
+1. **Morning vs Evening Trip Patterns (`morning_vs_evening_summary.sql`)**
 
-6. **rider_type_distribution.sql**  
-   - Analyzes distribution of **subscriber types** (casual vs registered) across morning and evening periods.  
+   * Compared overall ride counts between **morning (6–11 AM)** and **evening (4–8 PM)**.
+   * Helps identify when riders are most active.
 
-7. **rider_retention.sql**  
-   - Simulates **rider retention** by checking how many bikes (proxy for users) appear in **both morning and evening trips** across weeks.  
+2. **Percentage Differences (`percentage_differences.sql`)**
 
+   * Calculated the **percentage gap** between morning and evening trips.
+   * Useful for quantifying **time-of-day preference shifts**.
+
+3. **Rider Retention (`rider_retention.sql`)**
+
+   * Analyzed **weekly unique riders** and how many return across weeks.
+   * Provides insights into **user loyalty and repeat usage**.
+
+4. **Rider Type Distribution (`rider_type_distribution.sql`)**
+
+   * Consolidated 50+ raw `subscriber_type` values into:
+
+     * **Subscriber** (annual, student, local passes, memberships)
+     * **Casual** (single rides, day passes, pay-as-you-go, event specials)
+     * **Unknown** (null or unclassified)
+   * Shows which groups dominate platform usage.
+
+5. **Morning vs Evening Rider Type Breakdown (`rider_type_morning_evening.sql`)**
+
+   * Compared **Casual vs Subscriber riders** in **morning vs evening trips**.
+   * Useful for testing whether **casuals ride more in evenings (leisure)** while **subscribers ride more in mornings (commute)**.
+
+6. **Top Start Stations (`top_start_stations.sql`)**
+
+   * Identified the most common **starting locations**.
+   * Highlights areas of **high demand entry points**.
+
+7. **Top End Stations (`top_end_stations.sql`)**
+
+   * Identified the most common **ending locations**.
+   * Useful for analyzing **commute patterns and demand sinks**.
+
+8. **Weekly Trip Trends (`weekly_trip_trends.sql`)**
+
+   * Tracked ride volumes across weeks.
+   * Shows **seasonal fluctuations and long-term trends**.
 
 ---
 
